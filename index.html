@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-lateral">
+        <div class="menu-superior">
+            <nav class="menu-sup-links">
+                <ul class="link-area">
+                    <li id="link-li"><i class="fa-solid fa-house"></i><a class="link" href="#">Início</a></li>
+                    <li id="link-li"><i class="fa-solid fa-magnifying-glass"></i><a class="link" href="#">Buscar</a></li>
+                    <li id="link-li"><i class="fa-solid fa-swatchbook"></i><a class="link" href="#">Sua Biblioteca</a></li>
+                </ul>
+                <ul class="link-area2">
+                    <li id="link-li"><i class="fa-solid fa-plus"></i><a class="link" href="#">Criar Playlist</a></li>
+                    <li id="link-li"><i class="fa-solid fa-heart"></i><a class="link" href="#">Músicas Curtidas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-inferior">
+            
+        </div>
+    </div>
+    <div class="mid-content">
+        <div class="menu-sup-mid">
+            <div class="back-next-button">
+                <div class="next-button">
+                    <button id="next-buttom">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </button>
+                </div>
+                <div class="back-button">
+                    <button id="back-buttom">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="perfil-part">
+                <button id="button-perfil">
+                    <i class="fa-solid fa-user"></i>
+                    <a id="link-perfil" href="">Meu Perfil</a>
+                    <i class="fa-solid fa-sort-down"></i>
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-grid">
+                <div class="column1">
+                    <div class="item">
+                        <div class="img-part">
+                            <img src="img/music-image.jpeg" alt="" id="img-play">
+                        </div>
+                        <div class="title-part">
+                            <h4 id="title-part">Funk</h4>
+                        </div>
+                        <div class="play-button-part">
+                            <div class="button-play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-part">
+                            <img src="img/music-image.jpeg" alt="" id="img-play">
+                        </div>
+                        <div class="title-part">
+                            <h4 id="title-part">Sertanejo</h4>
+                        </div>
+                        <div class="play-button-part">
+                            <div class="button-play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="column2">  
+                    <div class="item">
+                        <div class="img-part">
+                            <img src="img/music-image.jpeg" alt="" id="img-play">
+                        </div>
+                        <div class="title-part">
+                            <h4 id="title-part">Eletrônica</h4>
+                        </div>
+                        <div class="play-button-part">
+                            <div class="button-play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-part">
+                            <img src="img/music-image.jpeg" alt="" id="img-play">
+                        </div>
+                        <div class="title-part">
+                            <h4 id="title-part">Rap</h4>
+                        </div>
+                        <div class="play-button-part">
+                            <div class="button-play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column3">    
+                    <div class="item">
+                        <div class="img-part">
+                            <img src="img/music-image.jpeg" alt="" id="img-play">
+                        </div>
+                        <div class="title-part">
+                            <h4 id="title-part">Trap</h4>
+                        </div>
+                        <div class="play-button-part">
+                            <div class="button-play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-part">
+                            <img src="img/music-image.jpeg" alt="" id="img-play">
+                        </div>
+                        <div class="title-part">
+                            <h4 id="title-part">Blues</h4>
+                        </div>
+                        <div class="play-button-part">
+                            <div class="button-play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mixes-part">
+                <div class="especif-part">
+                    <h4 id="mix-title">Feitos para Você</h4>
+                    <button id="mix-button-show-all">MOSTRAR TUDO</button>
+                </div>
+                <div class="card-mix-part">
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mixes-part">
+                <div class="especif-part">
+                    <h4 id="mix-title">Seus Mixes Mais Ouvidos</h4>
+                    <button id="mix-button-show-all">MOSTRAR TUDO</button>
+                </div>
+                <div class="card-mix-part">
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mixes-part">
+                <div class="especif-part">
+                    <h4 id="mix-title">Tocados Recentemente</h4>
+                    <button id="mix-button-show-all">MOSTRAR TUDO</button>
+                </div>
+                <div class="card-mix-part">
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mixes-part">
+                <div class="especif-part">
+                    <h4 id="mix-title">Novos Lançamentos para Você</h4>
+                    <button id="mix-button-show-all">MOSTRAR TUDO</button>
+                </div>
+                <div class="card-mix-part">
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mixes-part">
+                <div class="especif-part">
+                    <h4 id="mix-title">Álbuns Para Você</h4>
+                    <button id="mix-button-show-all">MOSTRAR TUDO</button>
+                </div>
+                <div class="card-mix-part">
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-part">
+                            <img id="img-card" src="img/card-image.jpeg" alt="">
+                        </div>    
+                        <div class="title-card">
+                            <p id="title-mix">Daily Mix 1</p>
+                        </div>
+                        <div class="sub-title-autors">
+                            <p id="autors">
+                                Autores parte
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="play-music-part">
+        <div class="music-playing">
+            <div class="image-playing">
+                <img id="img-ing" src="img/music-playing.jpeg" alt="">
+            </div>
+            <div class="title-playing">
+                <h6 id="title-playing">Hold My Liquor</h6>
+                <h6 id="music-autor">Kanye West</h6>
+
+            </div>
+            <div class="like-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+        <div class="display-music">
+            <div class="tool-display">
+                <div class="pause-previous-part">
+                    <button id="random-button">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </button>
+                    <button id="previous-button">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </button>
+                    <button id="pause-button">
+                        <i class="fa-solid fa-pause"></i>
+                    </button>
+                    <button id="next-button">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </button>
+                    <button id="repeat-button">
+                        <i class="fa-solid fa-repeat"></i>
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="music-duration">
+                <div class="min-ing">
+                    <span id="min-ing">0:00</span>
+                </div>
+                <div class="duration">
+                    <input type="range" id="duration">
+                </div>
+                <div class="min-rest">
+                    <span id="min-rest">3:49</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="tool-part">
+            <button class="tool-buttons"><i class="fa-solid fa-microphone-lines"></i></button>
+            <button class="tool-buttons"><i class="fa-solid fa-bars"></i></button>
+            <button class="tool-buttons"><i class="fa-solid fa-computer"></i></button>
+            <button class="volume-button"><i class="fa-solid fa-volume-high"></i>
+                <input type="range" min="0" max="1" step="0.01" id="volumeRange">
+            </button>   
+            <button class="tool-buttons"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+            
+        </div>
+    </div>
+</body>
+</html>
